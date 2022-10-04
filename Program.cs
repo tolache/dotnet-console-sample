@@ -7,6 +7,7 @@ namespace dotnet_console_sample
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Source source = new Source();
         }
     }
 }
