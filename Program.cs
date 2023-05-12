@@ -23,4 +23,4 @@ customer = new Customer
 string output = JsonConvert.SerializeObject(customer);
 Console.WriteLine($"Serialized customer {output}");
 Customer deserializedCustomer = JsonConvert.DeserializeObject<Customer>(output) ?? throw new InvalidOperationException();
-Console.WriteLine($"Deserialized customer name {deserializedCustomer.Name}");
+Console.WriteLine($"Deserialized customer name: {deserializedCustomer.Name}");
