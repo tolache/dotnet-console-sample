@@ -5,9 +5,16 @@ using dotnet_console_sample;
 using Newtonsoft.Json;
 
 IDictionary environmentVariables = Environment.GetEnvironmentVariables();
-foreach (DictionaryEntry entry in environmentVariables)
+
+string filePath = "environment_variables.txt";
+
+using (StreamWriter writer = new StreamWriter(filePath))
 {
-    Console.WriteLine($"{entry.Key} = {entry.Value}");
+    foreach (DictionaryEntry entry in environmentVariables)
+    {
+        Console.WriteLine($"{entry.Key} = {entry.Value}");
+        writer.WriteLine($"{entry.Key} = {entry.Value}");
+    }
 }
 
 Console.WriteLine("Hello, World!2");
