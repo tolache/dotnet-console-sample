@@ -1,8 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using System.Threading.Channels;
+using System.Collections;
 using dotnet_console_sample;
 using Newtonsoft.Json;
+
+IDictionary environmentVariables = Environment.GetEnvironmentVariables();
+foreach (DictionaryEntry entry in environmentVariables)
+{
+    Console.WriteLine($"{entry.Key} = {entry.Value}");
+}
 
 Console.WriteLine("Hello, World!2");
 Customer customer = new();
