@@ -17,7 +17,7 @@ using (StreamWriter writer = new StreamWriter(filePath))
     }
 }
 
-Console.WriteLine("Hello, World!2");
+Console.WriteLine("Hello, World!6");
 Customer customer = new();
 if (Environment.GetEnvironmentVariable("BOGUS_VAR") != null)
 {
