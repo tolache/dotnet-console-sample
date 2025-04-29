@@ -17,11 +17,11 @@ using (StreamWriter writer = new StreamWriter(filePath))
     }
 }
 
-Console.WriteLine("Hello, World!6");
+Console.WriteLine("Hello, World!7");
 Customer customer = new();
 if (Environment.GetEnvironmentVariable("BOGUS_VAR") != null)
 {
-    Console.WriteLine(customer.Name.Length);
+    Console.WriteLine(customer.Name?.Length);
 }
 
 customer = new Customer

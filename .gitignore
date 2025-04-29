@@ -6,3 +6,4 @@ obj
 inspectcode-cache/**
 inspectcode-report.xml
 Publish
+environment_variables.txt
